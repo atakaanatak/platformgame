@@ -91,6 +91,7 @@ public class PlayerController : MonoBehaviour
         if (health <= 0)
         {
             // lose game
+            Destroy(gameObject);
             gamemanager.Youlose();
         }
         
