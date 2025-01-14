@@ -101,6 +101,17 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
         }
+
+        if (other.gameObject.CompareTag("outofworld"))
+        {
+            KillThePlayer();
+        }
+    }
+
+    private void KillThePlayer()
+    {
+        Destroy(gameObject);
+        gamemanager?.Youlose();
     }
 
     private void ApplyKnockback(Collision other)
