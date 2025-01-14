@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Gamemanager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Gamemanager : MonoBehaviour
     public GameObject panel;
     public GameObject youwin;
     public GameObject youlose;
+  
     
 
 
@@ -32,5 +34,13 @@ public class Gamemanager : MonoBehaviour
     {
         panel.SetActive(true);
         youlose.SetActive(true);
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("oyun");
+    }  
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("mainmenu");
     }
 }
