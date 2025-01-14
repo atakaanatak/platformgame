@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/atakanscene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/mainmenu.unity
+    guid: c74dee704d661cb4ea0fe97382b49c7d
+  - enabled: 1
+    path: Assets/Scenes/oyun.unity
+    guid: 686e6101012a7cc4588b3feee4a2829c
   m_configObjects: {}
